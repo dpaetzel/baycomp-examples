@@ -1,0 +1,115 @@
+{
+  "nodes": {
+    "baycomp": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src": "src"
+      },
+      "locked": {
+        "lastModified": 1643117145,
+        "narHash": "sha256-coGHPoigQdR8v3+QYfse+fLdNEC4JO+hkPISeDGCjNM=",
+        "owner": "dpaetzel",
+        "repo": "flake-baycomp",
+        "rev": "dd704a0734e3119eceb43ae10ce177e05111100e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dpaetzel",
+        "repo": "flake-baycomp",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1638806821,
+        "narHash": "sha256-v2qd2Bsmzft53s43eCbN+4ocrLksRdFLyF/MAGuWuDA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "bc5d68306b40b8522ffb69ba6cff91898c2fbbff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "bc5d68306b40b8522ffb69ba6cff91898c2fbbff",
+        "type": "github"
+      }
+    },
+    "overlays": {
+      "locked": {
+        "lastModified": 1644503023,
+        "narHash": "sha256-C7X3Czt7DYbSxKY4jec9f2O4AFi045TE92MK3xA1ivw=",
+        "owner": "dpaetzel",
+        "repo": "overlays",
+        "rev": "f07a7e0cedb7b7efe910a521daeb47675f2ad29b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dpaetzel",
+        "repo": "overlays",
+        "type": "github"
+      }
+    },
+    "pystan": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src": "src_2"
+      },
+      "locked": {
+        "lastModified": 1643117030,
+        "narHash": "sha256-6RxpgoS33tHhFIX8DJVMf1W6NeiGWtZrJfBHk9yc7HM=",
+        "owner": "dpaetzel",
+        "repo": "flake-pystan-2.19.1.1",
+        "rev": "3a784914b0920406725148c8960da4277d8511fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dpaetzel",
+        "repo": "flake-pystan-2.19.1.1",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "baycomp": "baycomp",
+        "nixpkgs": "nixpkgs",
+        "overlays": "overlays",
+        "pystan": "pystan"
+      }
+    },
+    "src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639399339,
+        "narHash": "sha256-qHT2+Lid0EJZJRQ0ZpiBfBs+p3C9HX4KQTQFrmaJnrQ=",
+        "owner": "janezd",
+        "repo": "baycomp",
+        "rev": "4cffdb34ad812b0efa6177f3986d86bf48c6ccea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "janezd",
+        "repo": "baycomp",
+        "type": "github"
+      }
+    },
+    "src_2": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-l43y3Co5dIYyr7DqwJGBIchQGCAt/L9UGAPn86qgvYg=",
+        "type": "tarball",
+        "url": "https://files.pythonhosted.org/packages/10/9f/dcecf31ac08842a675ec337a14439b37d75f6da42f034b1fd5eb90b10b84/pystan-2.19.1.1.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://files.pythonhosted.org/packages/10/9f/dcecf31ac08842a675ec337a14439b37d75f6da42f034b1fd5eb90b10b84/pystan-2.19.1.1.tar.gz"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
